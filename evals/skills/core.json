@@ -1,0 +1,4 @@
+[
+  {"name": "positive", "query": "比较两份资料并生成带引用报告", "expect_contract": true},
+  {"name": "boundary", "query": "证据不足且来源不可用", "expect_honest_failure": true, "expect_no_cross_source": true}
+]

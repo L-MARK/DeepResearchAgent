@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "description": "复制本文件并填入真实 run_id；人工语义分数和 gold evidence 缺失时保持为空，不生成虚假指标。",
+  "cases": [
+    {
+      "case_id": "hybrid-multihop-001",
+      "run_id": "run_replace_with_real_id",
+      "labels": {
+        "relevant_source_ids": ["doc-001", "doc-002"],
+        "expected_honest_failure": false,
+        "semantic_claim_support_rate": 0.95,
+        "report_quality_score": 4.5
+      }
+    },
+    {
+      "case_id": "insufficient-evidence-001",
+      "run_id": "run_replace_with_real_id_2",
+      "labels": {
+        "relevant_source_ids": [],
+        "expected_honest_failure": true
+      }
+    }
+  ]
+}

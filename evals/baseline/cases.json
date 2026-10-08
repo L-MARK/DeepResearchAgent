@@ -1,0 +1,5 @@
+[
+  {"id":"deep-research-smoke","workflow":"deep_research","query":"国家奖学金和国家励志奖学金是否互斥？","expected":{"non_empty_answer":true}},
+  {"id":"per-smoke","workflow":"plan_execute_report","query":"比较两种治疗方案并给出证据和局限。","expected":{"plan":true,"report":true}},
+  {"id":"citation-smoke","workflow":"plan_execute_report","query":"总结材料中的核心规定并引用来源。","expected":{"citation_required":true}}
+]
